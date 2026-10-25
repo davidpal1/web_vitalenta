@@ -1,0 +1,14 @@
+# Editor
+.idea/
+.vscode/
+
+# Original source files (large photos, design references) – not published
+my_input/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Private notes – not published
+ideas/

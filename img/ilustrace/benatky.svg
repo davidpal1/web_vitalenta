@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 140" fill="none" stroke="#e8d9be" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMax slice">
+  <!-- moon and its reflection -->
+  <circle cx="660" cy="44" r="16" fill="#e8d9be" fill-opacity=".1"/>
+  <path d="M642 104H678M650 112H670M656 120H664" stroke-opacity=".4"/>
+  <!-- horizon / fondamenta -->
+  <path d="M0 96H800" stroke-opacity=".55"/>
+  <!-- campanile di San Marco -->
+  <g stroke-opacity=".75">
+    <path d="M96 96V40H116V96"/>
+    <path d="M94 40H118M96 40V30H116V40M94 30H118"/>
+    <path d="M100 38V33A2 2 0 0 1 104 33V38M108 38V33A2 2 0 0 1 112 33V38"/>
+    <path d="M97 30L106 12L115 30M106 12V6M104 8H108"/>
+    <path d="M101 50V88M111 50V88" stroke-opacity=".35"/>
+  </g>
+  <!-- Palazzo Ducale – long facade with gothic arcades -->
+  <g stroke-opacity=".65">
+    <path d="M124 96V66H214V96M124 66H214M124 80H214"/>
+    <path d="M130 96V89Q133 84 136 89V96M142 96V89Q145 84 148 89V96M154 96V89Q157 84 160 89V96M166 96V89Q169 84 172 89V96M178 96V89Q181 84 184 89V96M190 96V89Q193 84 196 89V96M202 96V89Q205 84 208 89V96"/>
+    <path d="M131 80V76Q133 73 135 76V80M139 80V76Q141 73 143 76V80M147 80V76Q149 73 151 76V80M155 80V76Q157 73 159 76V80M163 80V76Q165 73 167 76V80M171 80V76Q173 73 175 76V80M179 80V76Q181 73 183 76V80M187 80V76Q189 73 191 76V80M195 80V76Q197 73 199 76V80M203 80V76Q205 73 207 76V80" stroke-opacity=".45"/>
+    <path d="M124 66L128 62L132 66M136 66L140 62L144 66M148 66L152 62L156 66M160 66L164 62L168 66M172 66L176 62L180 66M184 66L188 62L192 66M196 66L200 62L204 66M206 66L210 62L214 66" stroke-opacity=".45"/>
+  </g>
+  <!-- Santa Maria della Salute – domes -->
+  <g stroke-opacity=".7">
+    <path d="M262 96V64H330V96"/>
+    <path d="M270 64C270 44 322 44 322 64"/>
+    <path d="M290 46.5V40H302V46.5M290 40C290 34 302 34 302 40M296 34V28M294 30H298"/>
+    <path d="M330 96V74H352V96M332 74C332 64 350 64 350 74M341 66V61"/>
+    <path d="M272 96V82A5 5 0 0 1 282 82V96M291 96V80A5 5 0 0 1 301 80V96M310 96V82A5 5 0 0 1 320 82V96" stroke-opacity=".5"/>
+  </g>
+  <!-- lagoon -->
+  <g stroke-opacity=".5"><path d="M0 108c8-3 16-3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0"/></g>
+  <g stroke-opacity=".32"><path d="M0 121c10-3 20-3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0"/></g>
+  <g stroke-opacity=".2"><path d="M0 134c12-2.5 24-2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0"/></g>
+  <!-- gondola with gondolier -->
+  <g stroke-opacity=".8">
+    <path d="M420 100C440 107 500 107 522 98C526 96 528 92 528 88"/>
+    <path d="M420 100C416 98 414 95 415 92"/>
+    <path d="M524 86H532M524 89H531M526 83L532 86"/>
+    <path d="M444 100V82M444 82L440 92M444 82L448 92"/>
+    <circle cx="444" cy="78" r="3"/>
+    <path d="M444 86L432 112" stroke-opacity=".6"/>
+    <path d="M468 102V96H492V102" stroke-opacity=".5"/>
+  </g>
+  <!-- striped mooring poles (pali da casada) -->
+  <g stroke-opacity=".7">
+    <path d="M574 112V72M586 114V68M598 112V74"/>
+    <path d="M572 76L576 74M572 82L576 80M572 88L576 86M584 72L588 70M584 78L588 76M584 84L588 82M596 78L600 76M596 84L600 82M596 90L600 88" stroke-opacity=".6"/>
+    <path d="M572 72A2 2 0 0 1 576 72M584 68A2 2 0 0 1 588 68M596 74A2 2 0 0 1 600 74"/>
+  </g>
+  <!-- distant island with a bell tower -->
+  <path d="M700 96C716 92 744 90 790 92" stroke-opacity=".35"/>
+  <path d="M752 91V74H758V91M752 74L755 68L758 74" stroke-opacity=".4"/>
+</svg>

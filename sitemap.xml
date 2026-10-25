@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- List of pages for search engines. When you add a page, add it here too.
+     Update <lastmod> (YYYY-MM-DD) when a page changes noticeably. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://vitalenta.cz/</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://vitalenta.cz/lekce.html</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://vitalenta.cz/cenik.html</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://vitalenta.cz/o-mne.html</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://vitalenta.cz/kontakt.html</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+  <url>
+    <loc>https://vitalenta.cz/ochrana-osobnich-udaju.html</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+</urlset>

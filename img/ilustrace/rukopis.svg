@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" stroke="#3a2e24" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+  <ellipse cx="62" cy="92" rx="44" ry="11" fill="#e8d9be" stroke="none"/>
+  <!-- open notebook -->
+  <path d="M60 48C48 41 32 41 17 45V92C32 88 48 88 60 95Z" fill="#fdf9f0"/>
+  <path d="M60 48C72 41 88 41 103 45V92C88 88 72 88 60 95Z" fill="#f8f2e5"/>
+  <path d="M60 48V95"/>
+  <!-- handwriting, as on the pen drawing -->
+  <g stroke="#5a1428" stroke-width=".9" stroke-opacity=".85">
+    <path d="M25 56c3-3 5 2 8-1s5 2 8-1s5 2 8-1"/>
+    <path d="M25 64c3-3 5 2 8-1s5 2 8-1s4 1 6 0"/>
+    <path d="M25 72c3-3 5 2 8-1s5 2 8-1"/>
+    <path d="M68 55c3-3 5 2 8-1s5 2 8-1s5 2 8-1"/>
+    <path d="M68 63c3-3 5 2 8-1s5 2 8-1"/>
+  </g>
+  <!-- fountain pen finishing the last line -->
+  <g transform="translate(85 66) rotate(-38)">
+    <path d="M0 0L10 -2.6V2.6Z" fill="#36231a"/>
+    <rect x="10" y="-3.2" width="32" height="6.4" rx="3.2" fill="#fdf9f0"/>
+    <path d="M17 -3.2V3.2" stroke-width=".8"/>
+    <path d="M36 -3.2V3.2" stroke-width=".8"/>
+  </g>
+  <path d="M24 109H96" stroke="#b39b78" stroke-width=".8"/>
+</svg>

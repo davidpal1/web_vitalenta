@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 140" fill="none" stroke="#e8d9be" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMax slice">
+  <!-- sun and its reflection -->
+  <circle cx="640" cy="50" r="18" fill="#e8d9be" fill-opacity=".1"/>
+  <path d="M620 102H660M628 110H652M635 118H645" stroke-opacity=".45"/>
+  <!-- Etna with a thin plume -->
+  <path d="M330 96C380 82 410 62 432 52C440 48 448 48 456 52C480 64 522 84 580 96" stroke-opacity=".4"/>
+  <path d="M444 46c-4-7 5-11 1-18s7-10 3-17" stroke-opacity=".3"/>
+  <!-- horizon -->
+  <path d="M236 96H800" stroke-opacity=".55"/>
+  <!-- sea -->
+  <g stroke-opacity=".5"><path d="M232 108c8-3 16-3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0"/></g>
+  <g stroke-opacity=".35"><path d="M200 121c10-3 20-3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0"/></g>
+  <g stroke-opacity=".22"><path d="M150 134c12-2.5 24-2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0s24 -2.5 36 0s24 2.5 36 0"/></g>
+  <!-- sailing boat -->
+  <g stroke-opacity=".75">
+    <path d="M456 92H494L487 100H463Z"/>
+    <path d="M475 92V62"/>
+    <path d="M475 64L493 89H475Z" fill="#e8d9be" fill-opacity=".12"/>
+    <path d="M472 68L460 88H472" stroke-opacity=".6"/>
+  </g>
+  <!-- seagulls -->
+  <path d="M548 34q5-4 10 0q5-4 10 0M586 22q4-3 8 0q4-3 8 0" stroke-opacity=".5"/>
+  <!-- cliff with a little hill town -->
+  <path d="M0 100C24 92 46 86 66 84L170 82C196 84 214 94 236 106" stroke-opacity=".6"/>
+  <g stroke-opacity=".7">
+    <path d="M70 84V66H88V84M88 84V60H102V84M102 84V68H122V84"/>
+    <path d="M128 84V58H150V84M128 58A11 11 0 0 1 150 58M139 47V42M137 44H141"/>
+    <path d="M154 84V46H166V84M154 46L160 40L166 46"/>
+    <path d="M158 56A2 2 0 0 1 162 56V60H158Z"/>
+    <path d="M76 72V76M94 66V70M110 74V78M136 70A3 3 0 0 1 142 70V76H136Z" stroke-opacity=".7"/>
+  </g>
+  <!-- prickly pear cactus -->
+  <g stroke-opacity=".55">
+    <ellipse cx="30" cy="84" rx="7" ry="9"/>
+    <ellipse cx="22" cy="70" rx="5" ry="7" transform="rotate(-25 22 70)"/>
+    <ellipse cx="38" cy="68" rx="5" ry="7" transform="rotate(25 38 68)"/>
+  </g>
+</svg>

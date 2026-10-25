@@ -1,0 +1,352 @@
+/* ==========================================================================
+   Theme variant "Lago di Como" – loaded AFTER style.css and overrides it.
+   Mood: quiet luxury, old money, a villa on the lake – cashmere and linen,
+   navy and tobacco, hairline rules, a lot of air and nothing that shouts.
+   Same fonts, same HTML.
+   ========================================================================== */
+
+:root {
+  /* Palette "Como" – the variable names stay the same as in style.css,
+     so every component picks up the new colours automatically */
+  --espresso: #2b2824;     /* body text – warm charcoal */
+  --sea: #1f2d44;          /* navy – links, primary buttons */
+  --sea-dark: #151f31;
+  --chianti: #7a2e3b;      /* wine – the one warm accent: italics, badge, hovers */
+  --olive: #b39b78;        /* camel – hairlines and decoration only */
+  --travertine: #e9e1d3;   /* text on dark */
+  --travertine-light: #ede6db;  /* oatmeal linen – alternate sections */
+  --cream: #f7f3ed;        /* page background – cashmere */
+  --white: #fbf9f5;
+  --navy: #1d2635;         /* dark sections */
+  --navy-dark: #161d29;    /* footer */
+
+  --color-muted: #6b6258;
+  --color-line: #d8cfc1;
+
+  --radius: 0;
+  --shadow: none;
+
+  /* More air between sections */
+  --space-xl: clamp(4.5rem, 3rem + 5vw, 8.5rem);
+}
+
+/* Linen – a barely visible weave on alternate sections */
+.section--travertine {
+  background-image:
+    repeating-linear-gradient(0deg, rgb(91 70 50 / 0.025) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgb(91 70 50 / 0.025) 0 1px, transparent 1px 3px);
+}
+
+/* Typography – lighter, calmer, more tracking */
+h1 { font-weight: 300; letter-spacing: 0; }
+h2, h3 { font-weight: 400; }
+h1 em, h2 em, h3 em { color: inherit; font-weight: 300; }
+.section--dark h1 em,
+.section--dark h2 em { color: inherit; }
+.lead { color: var(--color-muted); }
+
+/* Header – no line, just air */
+.site-header {
+  background-color: rgb(247 243 237 / 0.96);
+  border-bottom-color: transparent;
+}
+.js .site-nav { background-color: var(--cream); }
+.logo__name { font-weight: 400; letter-spacing: 0.24em; }
+.logo__tagline { letter-spacing: 0.28em; }
+.site-nav__link {
+  font-size: 0.74rem;
+  letter-spacing: 0.2em;
+}
+.site-nav__link:hover,
+.site-nav__link[aria-current="page"] { color: var(--espresso); }
+
+/* Eyebrow – a short camel hairline, tracked small capitals */
+.eyebrow {
+  color: var(--color-muted);
+  font-weight: 500;
+  letter-spacing: 0.28em;
+}
+.eyebrow::before { width: 1.5rem; }
+
+/* Buttons – navy, square, quiet */
+.btn {
+  padding: 0.95rem 2rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+.btn--accent {
+  background: var(--sea);
+  border-color: var(--sea);
+}
+.btn--accent:hover {
+  background: var(--sea-dark);
+  border-color: var(--sea-dark);
+}
+.link-arrow { font-weight: 500; letter-spacing: 0.2em; }
+
+/* Dark sections & footer – deep navy, like a blazer */
+.section--dark { background-color: var(--navy); }
+.site-footer {
+  background: var(--navy-dark);
+  border-top: 0;
+}
+
+/* Footer – airy, hairlines instead of weight */
+.site-footer { padding-block: var(--space-xl) var(--space-m); }
+.site-footer a:hover {
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: var(--olive);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+}
+.site-footer__title {
+  margin-bottom: var(--space-m);
+  padding-top: var(--space-s);
+  border-top: 1px solid var(--olive);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+}
+.site-footer__list li + li { margin-top: 0.6rem; }
+.site-footer__legal {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-m);
+  border-top-color: var(--olive);
+  color: #a99e8e;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+.site-footer__legal-name {
+  color: #d8cfc0;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 0.3rem;
+}
+.site-footer__bottom { color: #a99e8e; font-size: 0.8rem; }
+.site-footer__legal,
+.site-footer__bottom { text-align: center; }
+.site-footer__bottom { justify-content: center; }
+
+/* Bottom of the call-to-action band: Lake Como instead of Tuscany */
+.section--landscape {
+  background-image: url("../img/ilustrace/como.svg");
+}
+
+/* Cards – no boxes, just a hairline above, like a page in a fine catalogue */
+.card {
+  padding: var(--space-m) 0 0;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--olive);
+}
+@media (min-width: 48em) {
+  .card { padding: var(--space-m) 0 0; }
+}
+.card__icon { opacity: 0.85; }
+
+/* Price cards – open, hairline frame */
+.price-card {
+  background: none;
+  border-color: var(--color-line);
+}
+.price-card--featured {
+  border-color: var(--sea);
+  box-shadow: none;
+}
+.price-card__badge {
+  background: var(--sea);
+  font-weight: 500;
+  letter-spacing: 0.24em;
+}
+.price-card__price { font-weight: 300; }
+
+/* Steps – small tracked numerals over a hairline */
+.steps__item { border-top-color: var(--olive); }
+.steps__item::before {
+  content: counter(step, decimal-leading-zero);
+  margin-bottom: var(--space-s);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  color: var(--color-muted);
+}
+
+/* Portrait – a plain rectangle with an offset camel frame, like a framed print */
+.portrait img { border-radius: 0; }
+.portrait::before {
+  inset: 0.9rem 0 -0.9rem 1.8rem;
+  border-color: var(--olive);
+  border-radius: 0;
+}
+
+/* List markers – short dashes */
+.check-list li::before { background: var(--olive); }
+
+/* Ornament – just a hairline, no flourish */
+.ornament { color: var(--olive); }
+.ornament svg { display: none; }
+
+/* Numbers */
+.card__number,
+.error-page__code { color: var(--color-muted); }
+
+/* FAQ, form, notice */
+.faq__question { font-weight: 400; }
+.faq__question::after { color: var(--color-muted); }
+.contact__form {
+  background: var(--white);
+  border-color: var(--color-line);
+}
+.field__input { border-color: #938878; }
+.notice { border-left-color: var(--olive); }
+
+::selection {
+  background: #e3d7c3;
+  color: var(--espresso);
+}
+
+/* ==========================================================================
+   Warmth – one wine accent and a warmer portrait, the rest stays quiet
+   ========================================================================== */
+main h1 em,
+main h2 em,
+main h3 em { color: var(--chianti); }
+.section--dark h1 em,
+.section--dark h2 em { color: inherit; }
+.price-card__badge { background: var(--chianti); }
+.notice { border-left-color: var(--chianti); }
+.btn--accent:hover,
+.btn:not(.btn--outline):not(.btn--light):not(.btn--light-outline):hover {
+  background: var(--chianti);
+  border-color: var(--chianti);
+}
+main p a:not(.btn):hover { color: var(--chianti); }
+
+/* Portrait – the grey studio backdrop is tinted to the warm cashmere of the page.
+   The photo file is untouched; multiply only warms the light areas. */
+.portrait::after {
+  content: "";
+  position: absolute;
+  inset: 0 0.9rem;
+  background: linear-gradient(180deg, rgb(237 230 219 / 0.6), rgb(233 221 200 / 0.4));
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* Warmer neutrals – sun-warmed linen instead of cool cashmere (navy and wine stay) */
+:root {
+  --espresso: #33291f;           /* body text – warm espresso */
+  --cream: #f8f0e3;              /* page background – warm linen */
+  --white: #fcf7ee;
+  --travertine-light: #f0e4d0;   /* alternate sections – honey oatmeal */
+  --travertine: #eadfca;
+  --olive: #bf9f6f;              /* camel – a little more golden */
+  --color-muted: #6e5d4d;
+  --color-line: #e0d1b9;
+  --navy: #212a3a;
+  --navy-dark: #1a212d;
+}
+.site-header { background-color: rgb(248 240 227 / 0.96); }
+.section--travertine {
+  background-image:
+    repeating-linear-gradient(0deg, rgb(122 80 40 / 0.03) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgb(122 80 40 / 0.03) 0 1px, transparent 1px 3px);
+}
+.portrait::after {
+  background: linear-gradient(180deg, rgb(244 228 202 / 0.65), rgb(236 216 184 / 0.45));
+}
+
+/* ==========================================================================
+   One clear call to action – solid buttons are wine, everything else is navy outline.
+   Plus a double hairline in the featured price card, borrowed from "Sapore di sale".
+   ========================================================================== */
+.btn:not(.btn--outline):not(.btn--light):not(.btn--light-outline) {
+  background: var(--chianti);
+  border-color: var(--chianti);
+  color: var(--white);
+}
+.btn:not(.btn--outline):not(.btn--light):not(.btn--light-outline):hover,
+.btn--accent:hover {
+  background: var(--sea);
+  border-color: var(--sea);
+}
+.price-card--featured {
+  outline: 1px solid var(--olive);
+  outline-offset: -6px;
+}
+
+/* Linen – a barely visible fine grain instead of the line grid (which looked like squared paper) */
+.section--travertine {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .32 0 0 0 0 .2 0 0 0 .266 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Page background – the same fine grain, even fainter, like heavy cotton paper */
+body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .32 0 0 0 0 .2 0 0 0 .285 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+/* The grain darkens the page a little – a slightly lighter base keeps the cream as it was */
+body { background-color: #fff7ea; }
+.section--travertine { background-color: #f6ebd8; }
+
+/* Dark areas (navy bands, footer) get the same grain – light speckles instead of dark ones */
+:root {
+  --grain-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .95 0 0 0 0 .9 0 0 0 0 .8 0 0 0 .076 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.section--dark:not(.section--landscape),
+.site-footer { background-image: var(--grain-dark); }
+.section--landscape {
+  background-image: url("../img/ilustrace/como.svg"), var(--grain-dark);
+  background-size: max(100%, 56rem) auto, auto;
+  background-position: 18% bottom, 0 0;
+  background-repeat: no-repeat, repeat;
+}
+
+/* ==========================================================================
+   Readability – comfortable for tired eyes (40+): bigger small print, sturdier serif,
+   darker secondary text. All text pairs stay above WCAG AA (4.5:1), most above AAA.
+   ========================================================================== */
+:root { --color-muted: #5c4c3e; }   /* secondary text, 7:1 on the page background */
+body { font-size: 1.0625rem; }      /* 17 px instead of 16 px */
+
+/* Cormorant has a small x-height – the intro paragraphs get more size and weight */
+.lead {
+  font-size: clamp(1.35rem, 1.2rem + 0.5vw, 1.6rem);
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--color-muted);
+}
+
+/* Small tracked capitals – nothing below 12 px */
+.eyebrow { font-size: 0.8rem; font-weight: 600; }
+.logo__tagline { font-size: 0.72rem; }
+.site-nav__link { font-size: 0.8rem; }
+.site-footer__title { font-size: 0.8rem; }
+
+/* Footer – small print lighter and larger */
+.site-footer__legal,
+.site-footer__bottom { color: #d3c9b8; font-size: 0.875rem; }
+.site-footer__legal-name { font-size: 0.8rem; color: #ede6db; }
+.site-footer__legal-note { font-size: 0.8rem; opacity: 1; }
+.site-footer .cta__note,
+.cta__note { font-size: 0.95rem; }
+
+/* ==========================================================================
+   Soft-square – a hint of roundness for warmth, one arch as the Italian signature
+   ========================================================================== */
+:root { --radius: 3px; }
+.field__input { border-radius: var(--radius); }
+
+/* Portrait – top of the photo is a Roman arch (a window in an old villa wall) */
+.portrait img { border-radius: 999px 999px 0 0; }
+.portrait::before { border-radius: 999px 999px 0 0; }
+.portrait::after { border-radius: 999px 999px 0 0; }
+
+/* Portrait – full arch with a concentric hairline in camel (the same line as under the headings) */
+.portrait::before {
+  inset: -0.6rem 0.3rem -0.6rem;
+  border-color: var(--olive);
+  border-radius: 999px 999px 0 0;
+}

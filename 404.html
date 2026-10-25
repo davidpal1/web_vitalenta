@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This page can be shown at any address (e.g. /neco/jineho), so all links start from the site root.
+       EDIT: while the site runs at https://<user>.github.io/<repo>/ change this to "/<repo>/";
+       with your own domain (vitalenta.cz) keep "/". -->
+  <base href="/">
+  <title>Stránka nenalezena | Vita Lenta</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#faf6ef">
+  <meta name="robots" content="noindex">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-latin-ext-wght-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme-aktivni.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- With <base> a plain "#obsah" link would go to the home page, so the jump is done in JS -->
+  <a class="skip-link" href="#obsah" onclick="document.getElementById('obsah').focus(); return false">Přeskočit na obsah</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="Vita Lenta – úvodní stránka">
+        <span class="logo__name">Vita Lenta</span>
+        <span class="logo__tagline">Lekce italštiny</span>
+      </a>
+
+      <a class="btn btn--small header-cta" href="kontakt.html#rezervace" aria-label="Domluvit si patnáct minut úvodního hovoru zdarma">15 minut zdarma</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__label">Menu</span>
+        <span class="nav-toggle__icon" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Hlavní menu">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Domů</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="lekce.html">Lekce</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="cenik.html">Ceník</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="o-mne.html">O&nbsp;mně</a></li>
+        </ul>
+        <div class="site-nav__cta">
+          <a class="btn btn--small" href="kontakt.html#rezervace">Úvodní hovor zdarma</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- ===== /HEADER ===== -->
+
+  <main id="obsah" tabindex="-1">
+    <section class="error-page">
+      <div class="container container--narrow">
+        <img class="illustration" src="img/ilustrace/kava.svg" alt="" width="120" height="120">
+        <p class="error-page__code">404</p>
+        <h1>Mi dispiace – <em>stránka nenalezena</em></h1>
+        <p class="lead">Tahle stránka neexistuje nebo se přestěhovala. Nevadí – piano piano, zkusme to jinudy.</p>
+        <div class="btn-group">
+          <a class="btn" href="index.html">Zpět na úvod</a>
+          <a class="btn btn--outline" href="kontakt.html#rezervace">Domluvit úvodní hovor</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a class="logo" href="index.html" aria-label="Vita Lenta – úvodní stránka">
+            <span class="logo__name">Vita Lenta</span>
+            <span class="logo__tagline">Lekce italštiny</span>
+          </a>
+          <p class="mt-l">Lekce italštiny v&nbsp;klidném tempu s&nbsp;Terezou Kasalovou.</p>
+        </div>
+        <nav aria-label="Patička">
+          <h2 class="site-footer__title">Stránky</h2>
+          <ul class="site-footer__list">
+            <li><a href="lekce.html">Lekce</a></li>
+            <li><a href="cenik.html">Ceník</a></li>
+            <li><a href="o-mne.html">O&nbsp;mně</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2 class="site-footer__title">Kontakt</h2>
+          <!-- EDIT: contact details (change on every page) -->
+          <ul class="site-footer__list">
+            <li><a href="mailto:ciao@vitalenta.cz">ciao@vitalenta.cz</a></li>
+            <li>Lekce online</li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__legal">
+        <p class="site-footer__legal-name">Mgr. Tereza Kasalová</p>
+        <p>IČO&nbsp;30122473<span class="site-footer__sep" aria-hidden="true">·</span>Jeřabinová&nbsp;738/9, 602&nbsp;00&nbsp;Brno</p>
+        <p class="site-footer__legal-note">Fyzická osoba zapsaná v&nbsp;živnostenském rejstříku.</p>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2026 Tereza Kasalová · Vita Lenta</p>
+        <p><a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- ===== /FOOTER ===== -->
+</body>
+</html>

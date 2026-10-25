@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 140" fill="none" stroke="#e9e1d3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMax slice">
+  <!-- mountains around the lake -->
+  <path d="M0 70C60 52 120 40 190 50S300 30 380 44S520 26 600 42S720 34 800 48" stroke-opacity=".28"/>
+  <path d="M280 96C360 76 440 68 520 78S660 66 800 82" stroke-opacity=".42"/>
+  <!-- far shore -->
+  <path d="M220 96H800" stroke-opacity=".45"/>
+  <!-- still water – a few calm lines -->
+  <path d="M300 108H520M380 116H640M460 124H740M560 132H800" stroke-opacity=".22"/>
+  <!-- villa with a loggia -->
+  <g stroke-opacity=".7">
+    <path d="M66 92V56H184V92"/>
+    <path d="M60 56H190L180 48H70Z"/>
+    <path d="M86 92V80A8 8 0 0 1 102 80V92M117 92V80A8 8 0 0 1 133 80V92M148 92V80A8 8 0 0 1 164 80V92"/>
+    <path d="M80 72V62H88V72M100 72V62H108V72M121 72V62H129V72M142 72V62H150V72M162 72V62H170V72" stroke-opacity=".6"/>
+    <path d="M66 74H184" stroke-opacity=".35"/>
+  </g>
+  <!-- terrace with a balustrade down to the water -->
+  <g stroke-opacity=".55">
+    <path d="M30 96H222M30 90H222"/>
+    <path d="M38 90V96M50 90V96M62 90V96M74 90V96M190 90V96M202 90V96M214 90V96"/>
+    <path d="M30 96V104H222V96" stroke-opacity=".4"/>
+  </g>
+  <!-- cypresses and a stone pine -->
+  <g stroke-opacity=".6">
+    <path d="M42 90C37 76 38 56 42 38C46 56 47 76 42 90Z"/>
+    <path d="M206 90C202 78 203 62 206 48C209 62 210 78 206 90Z"/>
+    <path d="M252 96V74M246 80L252 76L258 80"/>
+    <path d="M228 74C230 64 274 62 278 72C272 78 236 80 228 74Z"/>
+  </g>
+  <!-- reflection of the villa -->
+  <path d="M70 112H180M84 120H166M100 128H150" stroke-opacity=".18"/>
+  <!-- classic wooden runabout with its wake -->
+  <g stroke-opacity=".7">
+    <path d="M470 104H548C544 110 482 111 470 104Z"/>
+    <path d="M504 104L509 98H520"/>
+    <path d="M526 104V101H536"/>
+  </g>
+  <path d="M410 106H458M424 110H462" stroke-opacity=".28"/>
+  <!-- distant sail -->
+  <path d="M700 92H716M708 92V78L716 90" stroke-opacity=".35"/>
+</svg>

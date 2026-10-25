@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 140" preserveAspectRatio="xMidYMax slice">
+  <!-- sun and seagulls -->
+  <circle cx="640" cy="44" r="20" fill="#f6c437"/>
+  <path d="M500 40q5-4 10 0q5-4 10 0M534 28q4-3 8 0q4-3 8 0" fill="none" stroke="#fff6e8" stroke-width="1.6" stroke-linecap="round" stroke-opacity=".8"/>
+  <!-- sea -->
+  <rect y="92" width="800" height="48" fill="#1d6fb0"/>
+  <path d="M620 100H660M628 106H652M634 112H646" stroke="#f6c437" stroke-width="2" stroke-linecap="round" stroke-opacity=".7"/>
+  <!-- green hillside -->
+  <path d="M0 140V50C46 44 96 50 140 62C190 76 230 90 262 104L290 122V140Z" fill="#2e7a4e"/>
+  <!-- Positano: colourful houses stacked down the hill -->
+  <g>
+    <rect x="4" y="34" width="26" height="22" fill="#f4a7b0"/>
+    <rect x="32" y="38" width="22" height="18" fill="#f6c437"/>
+    <rect x="58" y="42" width="30" height="18" fill="#fff6e8"/>
+    <rect x="90" y="48" width="24" height="16" fill="#f7b77f"/>
+    <rect x="0" y="58" width="30" height="22" fill="#f7b77f"/>
+    <rect x="32" y="56" width="28" height="24" fill="#fff6e8"/>
+    <rect x="62" y="60" width="26" height="20" fill="#e2734a"/>
+    <rect x="90" y="62" width="24" height="20" fill="#f6c437"/>
+    <rect x="154" y="66" width="26" height="18" fill="#f4a7b0"/>
+    <rect x="184" y="76" width="24" height="16" fill="#fff6e8"/>
+    <rect x="0" y="82" width="36" height="22" fill="#f6c437"/>
+    <rect x="40" y="80" width="26" height="24" fill="#f4a7b0"/>
+    <rect x="70" y="80" width="30" height="24" fill="#fff6e8"/>
+    <rect x="104" y="82" width="28" height="22" fill="#f7b77f"/>
+    <rect x="136" y="82" width="30" height="22" fill="#f6c437"/>
+    <rect x="170" y="86" width="28" height="20" fill="#e2734a"/>
+    <rect x="202" y="92" width="24" height="16" fill="#f4a7b0"/>
+    <rect x="230" y="98" width="22" height="12" fill="#fff6e8"/>
+    <rect x="0" y="104" width="30" height="18" fill="#fff6e8"/>
+    <rect x="34" y="106" width="26" height="16" fill="#e2734a"/>
+    <rect x="64" y="104" width="34" height="18" fill="#f4a7b0"/>
+    <rect x="102" y="106" width="28" height="16" fill="#fff6e8"/>
+    <rect x="134" y="106" width="32" height="16" fill="#f6c437"/>
+    <rect x="170" y="106" width="26" height="16" fill="#f7b77f"/>
+    <rect x="200" y="108" width="30" height="14" fill="#fff6e8"/>
+  </g>
+  <!-- church with a majolica dome -->
+  <rect x="116" y="56" width="34" height="24" fill="#fff6e8"/>
+  <path d="M116 56A17 15 0 0 1 150 56Z" fill="#1aa39a"/>
+  <path d="M122 50Q133 44 144 50M119 54Q133 47 147 54" fill="none" stroke="#f6c437" stroke-width="1.6"/>
+  <path d="M133 41V35M131 37H135" stroke="#fff6e8" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- windows and shutters -->
+  <g fill="#1f3d9a" fill-opacity=".6">
+    <rect x="12" y="40" width="4" height="6"/><rect x="40" y="44" width="4" height="5"/><rect x="66" y="47" width="4" height="6"/><rect x="78" y="47" width="4" height="6"/>
+    <rect x="98" y="53" width="4" height="5"/><rect x="10" y="64" width="4" height="6"/><rect x="42" y="62" width="4" height="6"/><rect x="70" y="65" width="4" height="6"/>
+    <rect x="98" y="67" width="4" height="6"/><rect x="128" y="64" width="4" height="8" rx="2"/><rect x="163" y="71" width="4" height="6"/><rect x="192" y="80" width="4" height="5"/>
+    <rect x="10" y="88" width="4" height="6"/><rect x="22" y="88" width="4" height="6"/><rect x="50" y="86" width="4" height="7"/><rect x="80" y="86" width="4" height="7"/>
+    <rect x="114" y="88" width="4" height="6"/><rect x="146" y="88" width="4" height="6"/><rect x="180" y="91" width="4" height="6"/><rect x="211" y="96" width="4" height="5"/>
+    <rect x="12" y="109" width="4" height="5"/><rect x="76" y="109" width="4" height="6"/><rect x="88" y="109" width="4" height="6"/><rect x="146" y="110" width="4" height="5"/>
+  </g>
+  <!-- beach with striped umbrellas -->
+  <path d="M250 122C290 110 370 106 450 114L470 122Z" fill="#f3d9a4"/>
+  <g stroke="#fff6e8" stroke-width="1.4" stroke-linecap="round"><path d="M300 104V118M345 102V116M392 102V116M434 106V118"/></g>
+  <path d="M286 106Q300 94 314 106Z" fill="#e0402a"/><path d="M296 106Q300 95 304 106Z" fill="#fff6e8"/>
+  <path d="M331 104Q345 92 359 104Z" fill="#1aa39a"/><path d="M341 104Q345 93 349 104Z" fill="#fff6e8"/>
+  <path d="M378 104Q392 92 406 104Z" fill="#f6c437"/><path d="M388 104Q392 93 396 104Z" fill="#fff6e8"/>
+  <path d="M422 108Q434 98 446 108Z" fill="#e0402a"/><path d="M430 108Q434 99 438 108Z" fill="#fff6e8"/>
+  <!-- boats -->
+  <path d="M536 114H588L580 121H544Z" fill="#fff6e8"/>
+  <path d="M541 117H583" stroke="#e0402a" stroke-width="1.6"/>
+  <path d="M688 92H712L708 96H692Z" fill="#fff6e8"/>
+  <path d="M700 92V72" stroke="#fff6e8" stroke-width="1.2"/>
+  <path d="M701 74L714 90H701Z" fill="#fff6e8"/>
+  <!-- turquoise shallows in front -->
+  <rect y="120" width="800" height="20" fill="#14a0a6"/>
+  <g fill="none" stroke="#fff6e8" stroke-linecap="round" stroke-width="1.4">
+    <path stroke-opacity=".55" d="M0 126c8-3 16-3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0s16 -3 24 0s16 3 24 0"/>
+    <path stroke-opacity=".3" d="M0 134c10-3 20-3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0s20 3 30 0s20 -3 30 0"/>
+  </g>
+</svg>

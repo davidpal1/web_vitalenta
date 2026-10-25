@@ -1,0 +1,245 @@
+/* ==========================================================================
+   Theme variant "Toskánská vila" – loaded AFTER style.css and overrides it.
+   Mood: sun-warmed limewashed plaster, deep wine, brass, cypresses, Roman numerals,
+   framed pictures and arched windows. Same fonts, same HTML.
+   ========================================================================== */
+
+:root {
+  /* Palette "Villa" – the variable names stay the same as in style.css,
+     so every component picks up the new colours automatically */
+  --espresso: #3a2418;     /* body text */
+  --sea: #7a2e3b;          /* deep wine – links, primary buttons */
+  --sea-dark: #5a1f2a;
+  --chianti: #5a1428;      /* accents, headings in italics */
+  --olive: #6f7a3a;        /* cypress-sage – decoration only */
+  --travertine: #e2cfa9;
+  --travertine-light: #ecdcbf;  /* ochre plaster – alternate sections */
+  --cream: #f4ead8;        /* limewash – page background */
+  --white: #fbf5ea;        /* cards */
+  --cypress: #2f3a27;      /* dark sections */
+  --cypress-dark: #262f20; /* footer */
+
+  --color-muted: #6b4f3c;
+  --color-line: #d6c09a;
+
+  --radius: 2px;
+  --shadow: 0 1px 2px rgb(58 36 24 / 0.05), 0 10px 30px rgb(58 36 24 / 0.08);
+
+  /* Subtle plaster texture (tiny inline SVG noise) */
+  --plaster: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .3 0 0 0 0 .18 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+body,
+.section--travertine {
+  background-image: var(--plaster);
+}
+
+/* Header – warm plaster with a double "cornice" line */
+.site-header {
+  background-color: rgb(244 234 216 / 0.95);
+  border-bottom: 3px double var(--color-line);
+}
+.js .site-nav { background-color: var(--cream); }
+
+/* Eyebrow – small terracotta diamond instead of a line */
+.eyebrow { color: var(--sea); }
+.eyebrow::before {
+  width: 0.45rem;
+  height: 0.45rem;
+  background: none;
+  border: 1px solid var(--olive);
+  transform: rotate(45deg);
+}
+
+/* Dark sections & footer – cypress green instead of espresso */
+.section--dark { background-color: var(--cypress); }
+.site-footer {
+  position: relative;
+  background: var(--cypress-dark);
+  border-top: 0;
+}
+/* Strip of brass-toned tiles above the footer */
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: repeating-linear-gradient(90deg, #a8925f 0 46px, #7d6a3f 46px 48px);
+}
+
+/* Cards – picture frame: a second thin line inside the border */
+.card,
+.price-card {
+  outline: 1px solid var(--color-line);
+  outline-offset: -8px;
+}
+
+/* Benefit cards become arched villa windows */
+.grid--3 > .card {
+  padding-top: 3.5rem;
+  border-radius: 999px 999px var(--radius) var(--radius) / 8rem 8rem var(--radius) var(--radius);
+  text-align: center;
+}
+.grid--3 > .card .card__icon { margin-inline: auto; }
+
+/* Price cards */
+.price-card--featured {
+  border-color: var(--sea);
+  outline-color: var(--sea);
+}
+.price-card__badge { background: var(--sea); }
+
+/* Buttons */
+.btn--accent:hover {
+  background: #2f3a27;
+  border-color: #2f3a27;
+}
+
+/* Steps – Roman numerals, like an inscription */
+.steps__item {
+  border-top: 3px double var(--color-line);
+}
+.steps__item::before {
+  content: counter(step, upper-roman) ".";
+  font-style: normal;
+  letter-spacing: 0.08em;
+  color: var(--sea);
+}
+
+/* Portrait – double arch frame */
+.portrait::before {
+  border: 3px double var(--olive);
+}
+
+/* Ornament & numbers */
+.ornament { color: var(--sea); }
+.card__number,
+.error-page__code { color: var(--sea); }
+
+/* FAQ plus sign */
+.faq__question::after { color: var(--sea); }
+
+/* Notice */
+.notice { border-left-color: var(--sea); }
+
+/* ==========================================================================
+   Chic pass – fewer ornaments, more air, hairlines and tracked small capitals
+   ========================================================================== */
+:root {
+  --space-xl: clamp(4.5rem, 3rem + 5vw, 8.5rem);
+  --brass: #a8925f;
+  --shadow: none;
+}
+
+/* Typography – lighter and calmer */
+h1 { font-weight: 300; }
+h2, h3 { font-weight: 400; }
+h1 em, h2 em, h3 em { font-weight: 300; }
+.lead { color: var(--color-muted); }
+
+/* Header – single brass hairline instead of the double cornice */
+.site-header { border-bottom: 1px solid var(--color-line); }
+.logo__name { font-weight: 400; letter-spacing: 0.24em; }
+.logo__tagline { letter-spacing: 0.28em; }
+.site-nav__link { font-size: 0.74rem; letter-spacing: 0.2em; }
+
+/* Eyebrow – brass hairline diamond, tracked capitals */
+.eyebrow { color: var(--color-muted); font-weight: 500; letter-spacing: 0.28em; }
+.eyebrow::before { border-color: var(--brass); }
+
+/* Buttons – square, wide tracking, quiet */
+.btn { padding: 0.95rem 2rem; font-weight: 500; letter-spacing: 0.2em; }
+.link-arrow { font-weight: 500; letter-spacing: 0.2em; }
+
+/* Cards – hairline brass frame, no heavy outline */
+.card,
+.price-card { outline-color: rgb(168 146 95 / 0.45); }
+.price-card--featured { outline-color: var(--brass); border-color: var(--brass); }
+.price-card__badge { background: var(--chianti); letter-spacing: 0.2em; }
+
+/* Steps and portrait – thin lines instead of double rules */
+.steps__item { border-top: 1px solid var(--brass); }
+.portrait::before { border: 1px solid var(--brass); }
+
+/* Footer – calm, centred legal block */
+.site-footer { padding-block: var(--space-xl) var(--space-m); }
+.site-footer__title {
+  padding-top: var(--space-s);
+  border-top: 1px solid var(--brass);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+}
+.site-footer__list li + li { margin-top: 0.6rem; }
+.site-footer__legal { margin-top: var(--space-xl); border-top-color: rgb(168 146 95 / 0.5); text-align: center; }
+.site-footer__legal-name {
+  color: #e2d6bd;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 0.3rem;
+}
+.site-footer__bottom { font-size: 0.8rem; justify-content: center; text-align: center; }
+
+/* ==========================================================================
+   Quiet luxury – brass only in a few places: one hairline under titles,
+   the current page in the menu, the strip above the footer
+   ========================================================================== */
+
+/* Page titles and section headings: one short brass hairline */
+.page-intro h1::after,
+.section-head h2::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 1px;
+  margin: var(--space-m) 0 0;
+  background: var(--brass);
+}
+.section-head--center h2::after,
+.page-intro h1::after { margin-inline: auto; }
+
+/* Navigation – thin brass underline on the current page */
+.site-nav__link[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-color: var(--brass);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6em;
+}
+
+/* Everything else stays calm: plain hairlines, no frames, no ornaments */
+.card,
+.price-card { outline: 0; border-color: var(--color-line); }
+.price-card--featured { border-color: var(--brass); }
+.price-card__badge { background: var(--chianti); }
+.eyebrow::before { display: none; }
+.steps__item { border-top: 1px solid var(--color-line); }
+.portrait::before { border: 1px solid var(--color-line); }
+.site-footer__title { border-top-color: rgb(168 146 95 / 0.45); }
+.site-footer__legal { border-top-color: rgb(168 146 95 / 0.3); }
+
+/* Closing call to action */
+.cta__note {
+  margin: var(--space-m) 0 0;
+  font-size: var(--step--1);
+  color: var(--travertine);
+}
+.cta__note a {
+  color: var(--travertine-light);
+  text-decoration: underline;
+  text-decoration-color: rgb(168 146 95 / 0.7);
+  text-underline-offset: 0.3em;
+}
+
+/* Portrait – the grey studio backdrop is tinted to the warm limewash of the page.
+   The photo file itself is untouched; multiply only warms the light areas. */
+.portrait::after {
+  content: "";
+  position: absolute;
+  inset: 0 0.9rem;
+  border-radius: 999px 999px 0 0;
+  background: linear-gradient(180deg, rgb(236 220 191 / 0.55), rgb(226 207 169 / 0.35));
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}

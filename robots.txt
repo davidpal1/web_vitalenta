@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://vitalenta.cz/sitemap.xml

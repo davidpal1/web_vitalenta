@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" stroke="#3a2e24" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M45 50L33 55V92L45 88Z" fill="#7d8a5a" fill-opacity=".35"/>
+  <path d="M75 50L87 55V92L75 88Z" fill="#7d8a5a" fill-opacity=".35"/>
+  <path d="M33.5 62L45 57.5M33.5 69L45 64.5M33.5 76L45 71.5M33.5 83L45 78.5M86.5 62L75 57.5M86.5 69L75 64.5M86.5 76L75 71.5M86.5 83L75 78.5" stroke-width=".6"/>
+  <path d="M46 90V46A14 14 0 0 1 74 46V90Z" fill="#fdf9f0"/>
+  <path d="M60 32V90M46 62H74" stroke-width=".7"/>
+  <path d="M40 90H80"/>
+  <path d="M40 90H80V101H40Z" fill="#f8f2e5"/>
+  <path d="M44 95.5H76" stroke-width=".6" stroke-opacity=".5"/>
+  <g fill="#7a2e3b" fill-opacity=".85" stroke="none">
+    <circle cx="45" cy="86.5" r="2.7"/><circle cx="52" cy="84.5" r="3"/><circle cx="59" cy="86.5" r="2.7"/>
+    <circle cx="66" cy="84.5" r="3"/><circle cx="73" cy="86.5" r="2.7"/><circle cx="78" cy="85.5" r="2.3"/>
+  </g>
+  <path d="M42 101C40 106 44 108 45 111M78 101C80 106 76 108 75 110" stroke="#7d8a5a" stroke-width="1"/>
+  <path d="M24 109H96" stroke="#b39b78" stroke-width=".8"/>
+</svg>

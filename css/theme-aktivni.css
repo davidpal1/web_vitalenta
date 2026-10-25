@@ -1,0 +1,5 @@
+/* Aktivní vzhled webu – změňte jen tento jeden řádek.
+   Hlavní:  theme-como.css  (Lago di Como – jemně zaoblené, 3 px)
+   Záložní: theme-vila.css  (Toskánská vila)
+            theme-sale.css  (Sapore di sale) */
+@import url("theme-como.css");

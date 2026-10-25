@@ -1,0 +1,226 @@
+/* ==========================================================================
+   Theme variant "Sapore di sale" – loaded AFTER style.css and overrides it.
+   Mood: a sun-bleached Italian summer of the early sixties – sea salt on skin,
+   faded sea blue, warm sand, a little film grain. Washed out, never loud.
+   Same fonts, same HTML.
+   ========================================================================== */
+
+:root {
+  /* Palette "Sale" – the variable names stay the same as in style.css,
+     so every component picks up the new colours automatically */
+  --espresso: #2f3a40;     /* body text – deep sea slate */
+  --sea: #3d6178;          /* faded sea blue – links, primary buttons */
+  --sea-dark: #2b4a5e;
+  --chianti: #7a2e3b;      /* deep wine – the one warm accent, same as in the other variants */
+  --olive: #cdbb92;        /* sand – hairlines and decoration only */
+  --travertine: #e8e0cd;   /* text on dark */
+  --travertine-light: #f1eadb;  /* warm sand – alternate sections */
+  --cream: #faf7ef;        /* sea-salt white – page background */
+  --white: #fdfbf6;
+  --sea-deep: #2d4a5c;     /* dark sections */
+  --sea-night: #223a49;    /* footer */
+  --sun: #e3bf6a;          /* soft sun yellow – tiny details only */
+
+  --color-muted: #5f6d73;
+  --color-line: #ddd5c0;
+
+  --radius: 2px;
+  --shadow: none;
+  --space-xl: clamp(4.5rem, 3rem + 5vw, 8.5rem);
+
+  /* Fine film grain, like an old photograph */
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .3 0 0 0 0 .22 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+body,
+.section--travertine { background-image: var(--grain); }
+
+/* Typography – light and airy */
+h1 { font-weight: 300; }
+h2, h3 { font-weight: 400; }
+h1 em, h2 em, h3 em { color: var(--chianti); font-weight: 300; }
+.section--dark h1 em,
+.section--dark h2 em { color: var(--sun); }
+.lead { color: var(--color-muted); }
+
+/* Header – salt white, one sand hairline */
+.site-header {
+  background-color: rgb(250 247 239 / 0.96);
+  border-bottom: 1px solid var(--color-line);
+}
+.js .site-nav { background-color: var(--cream); }
+.logo__name { font-weight: 400; letter-spacing: 0.24em; }
+.logo__tagline { letter-spacing: 0.28em; }
+.site-nav__link { font-size: 0.74rem; letter-spacing: 0.2em; }
+.site-nav__link[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-color: var(--sun);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6em;
+}
+
+/* Eyebrow – small sun dot, tracked capitals */
+.eyebrow { color: var(--color-muted); font-weight: 500; letter-spacing: 0.28em; }
+.eyebrow::before {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--sun);
+}
+
+/* Buttons – faded sea blue, square, quiet */
+.btn { padding: 0.95rem 2rem; font-weight: 500; letter-spacing: 0.2em; }
+.btn--accent:hover,
+.btn:not(.btn--outline):not(.btn--light):not(.btn--light-outline):hover {
+  background: var(--chianti);
+  border-color: var(--chianti);
+}
+.link-arrow { font-weight: 500; letter-spacing: 0.2em; }
+
+/* Dark sections & footer – the sea at dusk, striped awning strip on top of the footer */
+.section--dark { background-color: var(--sea-deep); }
+.site-footer {
+  position: relative;
+  background: var(--sea-night);
+  border-top: 0;
+  padding-block: var(--space-xl) var(--space-m);
+}
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: repeating-linear-gradient(90deg, var(--cream) 0 28px, #9db7c2 28px 56px);
+  opacity: 0.85;
+}
+.site-footer a:hover {
+  text-decoration-color: var(--sun);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+}
+.site-footer__title {
+  margin-bottom: var(--space-m);
+  padding-top: var(--space-s);
+  border-top: 1px solid rgb(205 187 146 / 0.45);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+}
+.site-footer__list li + li { margin-top: 0.6rem; }
+.site-footer__legal {
+  margin-top: var(--space-xl);
+  border-top-color: rgb(205 187 146 / 0.3);
+  color: #a9b8bd;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.site-footer__legal-name {
+  color: #e3dccb;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 0.3rem;
+}
+.site-footer__bottom { color: #a9b8bd; font-size: 0.8rem; justify-content: center; text-align: center; }
+
+/* Closing call to action – a quiet line drawing of the sea (headland, pines, one sailing boat) */
+.section--landscape {
+  background-image: url("../img/ilustrace/sale.svg");
+}
+.cta__title::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 1px;
+  margin: var(--space-m) auto 0;
+  background: var(--sun);
+}
+.cta__note { margin: var(--space-m) 0 0; font-size: var(--step--1); color: var(--travertine); }
+.cta__note a { color: var(--white); text-decoration-color: var(--sun); text-underline-offset: 0.3em; }
+
+/* Headings of inner pages and sections: one short sun-yellow hairline */
+.page-intro h1::after,
+.section-head h2::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 1px;
+  margin: var(--space-m) 0 0;
+  background: var(--sun);
+}
+.section-head--center h2::after,
+.page-intro h1::after { margin-inline: auto; }
+
+/* Cards – open, hairline above, like a page in an old travel guide */
+.card {
+  padding: var(--space-m) 0 0;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--olive);
+}
+@media (min-width: 48em) { .card { padding: var(--space-m) 0 0; } }
+.card__icon { opacity: 0.9; }
+
+.price-card { background: none; border-color: var(--color-line); }
+.price-card--featured { border-color: var(--sea); box-shadow: none; }
+.price-card__badge { background: var(--chianti); font-weight: 500; letter-spacing: 0.24em; }
+.price-card__price { font-weight: 300; }
+
+/* Steps – small tracked numerals over a sand hairline */
+.steps__item { border-top-color: var(--olive); }
+.steps__item::before {
+  content: counter(step, decimal-leading-zero);
+  margin-bottom: var(--space-s);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  color: var(--color-muted);
+}
+
+/* Portrait – like a printed holiday photograph: white border, thin outline */
+.portrait img {
+  border-radius: 0;
+  border: 10px solid var(--white);
+  outline: 1px solid var(--color-line);
+}
+.portrait::before { content: none; }
+/* The grey studio backdrop is tinted to the warm sand of the page; the file itself is untouched */
+.portrait::after {
+  content: "";
+  position: absolute;
+  inset: 10px calc(0.9rem + 10px);
+  background: linear-gradient(180deg, rgb(244 232 205 / 0.6), rgb(236 220 186 / 0.4));
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.check-list li::before { background: var(--olive); }
+.ornament { color: var(--olive); }
+.ornament svg { display: none; }
+.card__number,
+.error-page__code { color: var(--chianti); }
+.faq__question { font-weight: 400; }
+.faq__question::after { color: var(--color-muted); }
+.notice { border-left-color: var(--sun); }
+
+/* ==========================================================================
+   Old money – a double-ruled frame for the portrait and the featured price card
+   ========================================================================== */
+
+/* Portrait – a mount (passe-partout) with a second hairline, like a framed print */
+.portrait img {
+  outline: 1px solid var(--color-line);
+  outline-offset: 6px;
+  margin: 6px;
+  width: calc(100% - 12px);
+}
+.portrait::after { inset: 16px calc(0.9rem + 16px); }
+
+/* Featured price card – double hairline */
+.price-card--featured {
+  outline: 1px solid var(--olive);
+  outline-offset: -6px;
+}
